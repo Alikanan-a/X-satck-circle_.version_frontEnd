@@ -140,93 +140,52 @@ $(function () {
       $('.about_us__main_page_section2-content').css('opacity', '0') ;
   })
 })
-// $(function () {
-  // $('.about_us__main_page_section2-content').removeClass('.opasity');
 
-//   let dropdouwnIsOpen = false
-//   $('.about_us__main_page_circle').hover(function() {
-//     if (!dropdouwnIsOpen) {
-//       $('.about_us__main_page_section2-content').fadeIn()
-//     } else {
-//       $('.about_us__main_page_section2-content').hide()
-//     }
-//     dropdouwnIsOpen = !dropdouwnIsOpen
-//   })
-//   $('.dropdown1').hover(function() {
-//     if (!dropdouwnIsOpen) {
-//       $('.dropdown-menu1').fadeIn()
-//     } else {
-//       $('.dropdown-menu1').hide()
-//     }
-//     dropdouwnIsOpen = !dropdouwnIsOpen
-//   })
-//   $('.dropdown2').hover(function() {
-//     if (!dropdouwnIsOpen) {
-//       $('.dropdown-menu2').fadeIn()
-//     } else {
-//       $('.dropdown-menu2').hide()
-//     }
-//     dropdouwnIsOpen = !dropdouwnIsOpen
-//   })
-//   $('.dropdown3').hover(function() {
-//     if (!dropdouwnIsOpen) {
-//       $('.dropdown-menu3').fadeIn()
-//     } else {
-//       $('.dropdown-menu3').hide()
-//     }
-//     dropdouwnIsOpen = !dropdouwnIsOpen
-//   })
-//   $('.dropdown4').hover(function() {
-//     if (!dropdouwnIsOpen) {
-//       $('.dropdown-menu4').fadeIn()
-//     } else {
-//       $('.dropdown-menu4').hide()
-//     }
-//     dropdouwnIsOpen = !dropdouwnIsOpen
-//   })
+// /*=============== SCROLL REVEAL ANIMATION ===============*/
+// const sr = ScrollReveal({
+//   origin: 'top',
+//   distance: '60px',
+//   duration: 2500,
+//   delay: 400,
+// })
+
+// sr.reveal('.color-container')
+// sr.reveal('.menu', {
+//   delay: 500
+// })
+// sr.reveal('.main__h1_placeHolder', {
+//   delay: 600
+// })
+// sr.reveal('.main__h1_lorem_placeHolder', {
+//   delay: 700
+// })
+// sr.reveal('.profile__info-group', {
+//   interval: 100,
+//   delay: 700
+// })
+// sr.reveal('.profile__buttons', {
+//   delay: 800
+// })
+// sr.reveal('.filters__content', {
+//   delay: 900
+// })
+// sr.reveal('.filters', {
+//   delay: 1000
 // })
 
 
-$('.slider').slick({
-  autoplay: true,//自動的に動き出すか。初期値はfalse。
-  infinite: true,//スライドをループさせるかどうか。初期値はtrue。
-  speed: 500,//スライドのスピード。初期値は300。
-  slidesToShow: 3,//スライドを画面に3枚見せる
-  slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
-  prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
-  nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
-  centerMode: true,//要素を中央ぞろえにする
-  variableWidth: true,//幅の違う画像の高さを揃えて表示
-  dots: true,//下部ドットナビゲーションの表示
+// /*=============== sticky navbar ===============*/
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 50,
+  loop: true,
+  grabCursor : true ,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
-// /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-  origin: 'top',
-  distance: '60px',
-  duration: 2500,
-  delay: 400,
-})
-
-sr.reveal('.color-container')
-sr.reveal('.menu', {
-  delay: 500
-})
-sr.reveal('.main__h1_placeHolder', {
-  delay: 600
-})
-sr.reveal('.main__h1_lorem_placeHolder', {
-  delay: 700
-})
-sr.reveal('.profile__info-group', {
-  interval: 100,
-  delay: 700
-})
-sr.reveal('.profile__buttons', {
-  delay: 800
-})
-sr.reveal('.filters__content', {
-  delay: 900
-})
-sr.reveal('.filters', {
-  delay: 1000
-})

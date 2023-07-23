@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
     <!--=============== box-icon ===============-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- link Remix icon -->
@@ -17,78 +18,78 @@
     <title>Document</title>
 </head>
 
-<body class="">
+<body class="blue">
     <!--=============== header ===============-->
     <header>
         <!-- THEME Button -->
         <i class="ri-moon-line change-theme" id="theme-button"></i>
-       <div class="item-list__container">
-           <a href="index.html" class="item-list__items">
-               صفحه اصلی
-           </a>
-           <a href="our-works.html" class="item-list__items">
-               نمونه کارها
-           </a>
-           <a href="blogs.html" class="item-list__items">
-               مقالات
-           </a>
-           <a href="about-us.html" class="item-list__items">
-               درباره ما
-           </a>
-       </div>
-       <!--===============COLOR-buttons ===============-->
-       <div class="color-container">
-           <div class='menu'>
-               <input class='toggle' id='menu' type='checkbox'>
-               <label class='style' for='menu'>
-                   <img src="assets/img/4xmen-logo.svg" alt="">
-               </label>
-               <a class='tab' href="#" id="blue">
-                   <p></p>
-               </a>
-               <a class='tab' id="purple">
-                   <p></p>
-               </a>
-               <a class='tab' id="pink">
-                   <p></p>
-               </a>
-               <a class='tab' id="teal">
-                   <p></p>
-               </a>
-               <a class='tab' id="red">
-                   <P></P>
-               </a>
-               <a class='tab' id="orange">
-                   <P></P>
-               </a>
-               <a class='tab' id="brown">
-                   <P></P>
-               </a>
-               <a class='tab' id="gray">
-                   <P></P>
-               </a>
-           </div><!-- menu -->
-       </div><!-- container -->
-       <div class="item-list__container">
-           <a href="contact-us.html" class="item-list__items">
-               ارتباط با ما
-           </a>
-           <a href="contact-dev.html" class="item-list__items">
-               همکاری با ما
-           </a>
-           <a href="project-reg.html" class="item-list__items">
-               درخواست پروژه
-           </a>
-       </div>
-      
-       <div class="box">
-           <form name="search">
-               <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
-           </form>
-           <i class="ri-search-line"></i>
+        <div class="item-list__container">
+            <a href="index.html" class="item-list__items">
+                صفحه اصلی
+            </a>
+            <a href="our-works.html" class="item-list__items">
+                نمونه کارها
+            </a>
+            <a href="blogs.html" class="item-list__items">
+                مقالات
+            </a>
+            <a href="about-us.html" class="item-list__items">
+                درباره ما
+            </a>
+        </div>
+        <!--===============COLOR-buttons ===============-->
+        <div class="color-container">
+            <div class='menu'>
+                <input class='toggle' id='menu' type='checkbox'>
+                <label class='style' for='menu'>
+                    <img src="assets/img/4xmen-logo.svg" alt="">
+                </label>
+                <a class='tab' href="#" id="blue">
+                    <p></p>
+                </a>
+                <a class='tab' id="purple">
+                    <p></p>
+                </a>
+                <a class='tab' id="pink">
+                    <p></p>
+                </a>
+                <a class='tab' id="teal">
+                    <p></p>
+                </a>
+                <a class='tab' id="red">
+                    <P></P>
+                </a>
+                <a class='tab' id="orange">
+                    <P></P>
+                </a>
+                <a class='tab' id="brown">
+                    <P></P>
+                </a>
+                <a class='tab' id="gray">
+                    <P></P>
+                </a>
+            </div><!-- menu -->
+        </div><!-- container -->
+        <div class="item-list__container2">
+            <a href="contact-us.html" class="item-list__items">
+                ارتباط با ما
+            </a>
+            <a href="contact-dev.html" class="item-list__items">
+                همکاری با ما
+            </a>
+            <a href="project-reg.html" class="item-list__items">
+                درخواست پروژه
+            </a>
+        </div>
 
-       </div>
-   </header>
+        <div class="box">
+            <form name="search">
+                <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+            </form>
+            <i class="ri-search-line"></i>
+
+        </div>
+    </header>
     <!--=============== header ===============-->
     <section class="about-us__home">
         <div class="about_us_home_content_placeholder">
@@ -262,177 +263,157 @@
             </p>
         </div>
 
-        <div class="member_sections">
-            <div class="member_box">
-                <div class="profile__container grid">
-                    <div class="profile__data">
-                        <div class="profile__border">
-                            <div class="profile__perfile">
-                                <img src="assets/img/IMG_20230211_225203_840-removebg-preview.png" alt="">
+        <div class="swiper mySwiper">
+            <div class="member_sections swiper mySwiper">
+                <div class="member_box swiper-slide">
+                    <div class="profile__container grid">
+                        <div class="profile__data">
+                            <div class="profile__border">
+                                <div class="profile__perfile">
+                                    <img src="assets/img/IMG_20230211_225203_840-removebg-preview.png" alt="">
+                                </div>
                             </div>
+                            <h2 class="profile__name">
+                                alikanan
+                            </h2>
+                            <h3 class="profile__profession">
+                                developer
+                            </h3>
+                            <ul class="profile__social">
+                                <!-- insert Instagram ID -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <!-- insert linkedin -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-linkedin-box-line"></i>
+                                </a>
+                                <!-- insert social media -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </ul>
                         </div>
-                        <h2 class="profile__name">
-                            alikanan
-                        </h2>
-                        <h3 class="profile__profession">
-                            developer
-                        </h3>
-                        <ul class="profile__social">
-                            <!-- insert Instagram ID -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                            <!-- insert linkedin -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                            <!-- insert social media -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-whatsapp-line"></i>
-                            </a>
-                        </ul>
                     </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem voluptatum numquam ipsam!
+                        Ex
+                        libero impedit labore corporis architecto debitis sapiente at facilis, harum placeat facere
+                        aliquid
+                        sed voluptates fugiat?</p>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem voluptatum numquam ipsam! Ex
-                    libero impedit labore corporis architecto debitis sapiente at facilis, harum placeat facere aliquid
-                    sed voluptates fugiat?</p>
-            </div>
-            <div class="member_box">
-                <div class="profile__container grid">
-                    <div class="profile__data">
-                        <div class="profile__border">
-                            <div class="profile__perfile">
-                                <img src="assets/img/IMG_20230211_225203_840-removebg-preview.png" alt="">
+                <div class="member_box swiper-slide">
+                    <div class="profile__container grid">
+                        <div class="profile__data">
+                            <div class="profile__border">
+                                <div class="profile__perfile">
+                                    <img src="assets/img/IMG_20230211_225203_840-removebg-preview.png" alt="">
+                                </div>
                             </div>
+                            <h2 class="profile__name">
+                                alikanan
+                            </h2>
+                            <h3 class="profile__profession">
+                                developer
+                            </h3>
+                            <ul class="profile__social">
+                                <!-- insert Instagram ID -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <!-- insert linkedin -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-linkedin-box-line"></i>
+                                </a>
+                                <!-- insert social media -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </ul>
                         </div>
-                        <h2 class="profile__name">
-                            alikanan
-                        </h2>
-                        <h3 class="profile__profession">
-                            developer
-                        </h3>
-                        <ul class="profile__social">
-                            <!-- insert Instagram ID -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                            <!-- insert linkedin -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                            <!-- insert social media -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-whatsapp-line"></i>
-                            </a>
-                        </ul>
                     </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem voluptatum numquam ipsam!
+                        Ex
+                        libero impedit labore corporis architecto debitis sapiente at facilis, harum placeat facere
+                        aliquid
+                        sed voluptates fugiat?</p>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem voluptatum numquam ipsam! Ex
-                    libero impedit labore corporis architecto debitis sapiente at facilis, harum placeat facere aliquid
-                    sed voluptates fugiat?</p>
-            </div>
-            <div class="member_box">
-                <div class="profile__container grid">
-                    <div class="profile__data">
-                        <div class="profile__border">
-                            <div class="profile__perfile">
-                                <img src="assets/img/IMG_20230211_225203_840-removebg-preview.png" alt="">
+                <div class="member_box swiper-slide">
+                    <div class="profile__container grid">
+                        <div class="profile__data">
+                            <div class="profile__border">
+                                <div class="profile__perfile">
+                                    <img src="assets/img/IMG_20230211_225203_840-removebg-preview.png" alt="">
+                                </div>
                             </div>
+                            <h2 class="profile__name">
+                                alikanan
+                            </h2>
+                            <h3 class="profile__profession">
+                                developer
+                            </h3>
+                            <ul class="profile__social">
+                                <!-- insert Instagram ID -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <!-- insert linkedin -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-linkedin-box-line"></i>
+                                </a>
+                                <!-- insert social media -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </ul>
                         </div>
-                        <h2 class="profile__name">
-                            alikanan
-                        </h2>
-                        <h3 class="profile__profession">
-                            developer
-                        </h3>
-                        <ul class="profile__social">
-                            <!-- insert Instagram ID -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                            <!-- insert linkedin -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                            <!-- insert social media -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-whatsapp-line"></i>
-                            </a>
-                        </ul>
                     </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem voluptatum numquam ipsam!
+                        Ex
+                        libero impedit labore corporis architecto debitis sapiente at facilis, harum placeat facere
+                        aliquid
+                        sed voluptates fugiat?</p>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem voluptatum numquam ipsam! Ex
-                    libero impedit labore corporis architecto debitis sapiente at facilis, harum placeat facere aliquid
-                    sed voluptates fugiat?</p>
-            </div>
-            <div class="member_box">
-                <div class="profile__container grid">
-                    <div class="profile__data">
-                        <div class="profile__border">
-                            <div class="profile__perfile">
-                                <img src="assets/img/IMG_20230211_225203_840-removebg-preview.png" alt="">
+                <div class="member_box swiper-slide">
+                    <div class="profile__container grid">
+                        <div class="profile__data">
+                            <div class="profile__border">
+                                <div class="profile__perfile">
+                                    <img src="assets/img/IMG_20230211_225203_840-removebg-preview.png" alt="">
+                                </div>
                             </div>
+                            <h2 class="profile__name">
+                                alikanan
+                            </h2>
+                            <h3 class="profile__profession">
+                                developer
+                            </h3>
+                            <ul class="profile__social">
+                                <!-- insert Instagram ID -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <!-- insert linkedin -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-linkedin-box-line"></i>
+                                </a>
+                                <!-- insert social media -->
+                                <a href="" target="_blank" class="profile__social-links">
+                                    <i class="ri-whatsapp-line"></i>
+                                </a>
+                            </ul>
                         </div>
-                        <h2 class="profile__name">
-                            alikanan
-                        </h2>
-                        <h3 class="profile__profession">
-                            developer
-                        </h3>
-                        <ul class="profile__social">
-                            <!-- insert Instagram ID -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                            <!-- insert linkedin -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                            <!-- insert social media -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-whatsapp-line"></i>
-                            </a>
-                        </ul>
                     </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem voluptatum numquam ipsam!
+                        Ex
+                        libero impedit labore corporis architecto debitis sapiente at facilis, harum placeat facere
+                        aliquid
+                        sed voluptates fugiat?</p>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem voluptatum numquam ipsam! Ex
-                    libero impedit labore corporis architecto debitis sapiente at facilis, harum placeat facere aliquid
-                    sed voluptates fugiat?</p>
+
             </div>
-            <div class="member_box">
-                <div class="profile__container grid">
-                    <div class="profile__data">
-                        <div class="profile__border">
-                            <div class="profile__perfile">
-                                <img src="assets/img/IMG_20230211_225203_840-removebg-preview.png" alt="">
-                            </div>
-                        </div>
-                        <h2 class="profile__name">
-                            alikanan
-                        </h2>
-                        <h3 class="profile__profession">
-                            developer
-                        </h3>
-                        <ul class="profile__social">
-                            <!-- insert Instagram ID -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-instagram-line"></i>
-                            </a>
-                            <!-- insert linkedin -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-linkedin-box-line"></i>
-                            </a>
-                            <!-- insert social media -->
-                            <a href="" target="_blank" class="profile__social-links">
-                                <i class="ri-whatsapp-line"></i>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero quidem voluptatum numquam ipsam! Ex
-                    libero impedit labore corporis architecto debitis sapiente at facilis, harum placeat facere aliquid
-                    sed voluptates fugiat?</p>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
@@ -876,11 +857,15 @@
             </filter>
         </defs>
     </svg>
+
+
     <!-- =============== type.js =============== -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <!--=============== jquery ===============-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <!--=============== main JS ===============-->
     <script src="assets/js/main.js"></script>
     <!--=============== SCROLLREVEAL ===============-->
