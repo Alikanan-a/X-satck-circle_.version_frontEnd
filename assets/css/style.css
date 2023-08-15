@@ -1860,6 +1860,7 @@ body .footer .content {
   .home__first_placeHolder {}
   .home .home__scond__placeHolder  {
     /* width: 768px; */
+    width: min-content;
   }
   .home .profession-container {
     position: absolute;
@@ -1985,18 +1986,13 @@ body .footer .content {
 }
 
 @media screen and (max-width: 567px) {
-  html {
-    width: 100%;
-  }
-
   body {
     /* background-color: lightblue; */
-
-    width: 100%;
   }
 
   header {
-    display: none;
+    display: flex;
+    bottom: 0;
   }
 
   .home {
@@ -2015,14 +2011,14 @@ body .footer .content {
   }
 
   .profession-container {
-    position: absolute;
+    position: relative;
     /* width: 100%; */
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin-top: 20rem;
-    margin-right: 31.5rem;
+    /* margin-top: 20rem;
+    margin-right: 40rem; */
     transform: translateY(-50%);
     width: 500px;
     height: 500px;
